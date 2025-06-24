@@ -1,0 +1,177 @@
+/* Fixed Sidebar */
+
+.Fixed {
+  width: 16%;
+  background-color: #fff;
+  color: #012970;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.Fixed ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Dashboard Title */
+.Fixed ul li.dashboard > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #012970;
+}
+
+.Fixed ul li.dashboard i {
+  font-size: 1.4rem;
+  color: #012970;
+}
+
+/* Main List Items */
+.Fixed li > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 6px;
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+}
+
+.Fixed li > div:hover {
+  background-color: #f6f8fc;
+}
+
+/* Left icon + label container */
+.Fixed li > div > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Fixed li > div > div:first-child i {
+  font-size: 1.2rem;
+  color: #012970;
+  transition: color 0.3s ease;
+}
+
+.Fixed li > div > div:first-child h2 {
+  font-size: 1.05rem;
+  margin: 0;
+  color: #012970;
+  transition: color 0.3s ease;
+}
+
+/* Arrow icon */
+.Fixed li > div > div:last-child i {
+  font-size: 1rem;
+  color: #6c757d;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.Fixed li.open > div > div:last-child i {
+  transform: rotate(180deg);
+  color: #012970;
+}
+
+/* Active item */
+.Fixed li.open > div > div:first-child i,
+.Fixed li.open > div > div:first-child h2 {
+  color: #012970;
+  font-weight: 600;
+}
+
+/* Nested Submenu */
+.Fixed li ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding-left: 30px;
+  margin-top: 5px;
+  font-size: 0.95rem;
+  color: #012970;
+}
+
+.Fixed li.open ul {
+  max-height: 500px;
+}
+
+.Fixed li ul li {
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.Fixed li ul li:hover {
+  background-color: #e6f0ff;
+  color: #012970;
+}
+
+/* Pages section */
+.pages {
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.pages span {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #012970;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pages ul {
+  padding-left: 0;
+}
+
+.pages ul li {
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  color: #012970;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.pages ul li:hover {
+  background-color: #f0f4ff;
+  color: #012970;
+}
+
+/* Scrollbar Styling (optional for UX) */
+.Fixed::-webkit-scrollbar {
+  width: 6px;
+}
+
+.Fixed::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+.Fixed::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (max-width: 720px) {
+  .Fixed {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}

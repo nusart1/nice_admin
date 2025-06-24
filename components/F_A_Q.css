@@ -1,0 +1,130 @@
+.FAQ {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.FAQ > .hpfaq {
+  margin-bottom: 30px;
+}
+
+.FAQ h2 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.FAQ span {
+  color: #888;
+  font-size: 14px;
+}
+
+.FAQ strong {
+  color: #333;
+}
+
+.baqdes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.baqdes-left,
+.baqdes-right {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cardlar */
+.card,
+.card_ocy {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card h2,
+.card_ocy h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card li,
+.card_ocy li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.card span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card p,
+.card_ocy p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* FAQ interaktiv qismlar */
+.click_up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.click_up strong {
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.click_up.open strong {
+  color: blue;
+}
+
+.click_up i {
+  transition: transform 0.3s ease;
+}
+
+.click_up.open i {
+  transform: rotate(180deg);
+}
+
+.opny {
+  padding: 10px 0;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scaleY(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .baqdes-left,
+  .baqdes-right {
+    width: 100%;
+  }
+}

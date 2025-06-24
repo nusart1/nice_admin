@@ -1,0 +1,195 @@
+.Login {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.log_contend {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 480px;
+  width: 100%;
+}
+
+.lologin {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.lologin img {
+  width: 60px;
+  height: 60px;
+  /* border-radius: 12px; */
+  object-fit: cover;
+}
+
+.lologin h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+}
+
+.locep{
+    text-align: center;
+}
+
+.locep h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.locep p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.locanat ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.locanat li {
+  margin-bottom: 18px;
+}
+
+.locanat span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+.loustx {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.loustx > button {
+  max-width: 10%;
+  height: 38px;
+  padding: 0;
+  background-color: #e9ecef;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.locanat input[type="text"],
+.locanat input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+.locanat input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Error styles */
+.error-input {
+  border: 1px solid #dc3545;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* Remember me checkbox */
+.lotac {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.lotac label {
+  cursor: pointer;
+}
+
+/* Login button */
+.locanat button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.locanat button:hover {
+  background-color: #0056b3;
+}
+
+.locanat p {
+  margin-top: 18px;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+}
+
+.locanat p strong {
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Footer */
+.dbbm {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #999;
+}
+
+.dbbm strong {
+  color: #007bff;
+}
+
+.loustx input{
+    height: 38px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .log_contend {
+    padding: 25px 20px;
+  }
+
+  .lologin h1 {
+    font-size: 22px;
+  }
+
+  .locep h2 {
+    font-size: 20px;
+  }
+}

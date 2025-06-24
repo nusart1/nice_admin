@@ -1,0 +1,631 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Dashboard container */
+.Dashboard {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #333;
+    /* margin-left: 16%; */
+}
+
+.dash {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Main content layout */
+.dashContent {
+    display: flex;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+
+.leftCont{
+    min-width: 70%;
+}
+
+.rightCont{
+    min-width: 30%;
+}
+
+/* Left and Right Containers */
+.leftCont, .rightCont {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Increase Section */
+.increase {
+    display: flex;
+    gap: 5px;
+    /* flex-wrap: wrap; */
+}
+
+.increase > div {
+    background: #fff;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.incheader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.incbi {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bicart, .curdol, .peop {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #e0f3ff;
+    color: #007bff;
+    font-size: 24px;
+}
+
+.curdol {
+    background-color: #dff6e4;
+    color: #28a745;
+}
+
+.peop {
+    background-color: #ffe6e6;
+    color: #ff5722;
+}
+
+.otf, .egf {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.bif {
+    color: #e53935;
+    font-weight: bold;
+}
+
+/* Reports Section */
+.reports, .recent, .topSelling, .recentAct, .budget, .webTraf, .newsUp {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.reports h2, .recent h2, .tdy h2, .recentAct h2, .budget h2, .webTraf h2, .nwup h2 {
+    font-size: 18px;
+}
+
+.reports img{
+    width: 100%;
+}
+
+.tdy, .nwup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recent {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.recent .dx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.recent .dx i {
+  cursor: pointer;
+  color: #666;
+}
+
+.recent .dthd {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.recent .dthd-right,
+.recent .dthd-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recent .mdl {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recent .mdl h2 {
+  font-size: 16px;
+  margin: 0;
+  color: #007bff;
+}
+
+.recent .chvrn {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 5px;
+  color: #007bff;
+}
+
+.recent .mdl ul {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.recent .mdl ul li {
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  color: #007bff;
+}
+
+.recent .mdl ul li:hover {
+  background-color: #f0f8ff;
+}
+
+.recent .dthd-left input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.recent .dthd-left i {
+  margin-left: 5px;
+  cursor: pointer;
+  color: #888;
+}
+
+.recent .dknown {
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: 600;
+  gap: 10px;
+  border-radius: 4px 4px 0 0;
+  list-style: none;
+  margin: 0;
+  color: #444;
+}
+
+.recent .dknown li {
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+}
+
+.recent .datas {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent .datatable-row {
+  display: flex;
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+  transition: background 0.2s;
+}
+
+.recent .datatable-row:hover {
+  background-color: #f5faff;
+}
+
+.recent .datatable-row > div {
+  flex: 1;
+  text-align: left;
+}
+
+.recent .shwng {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #666;
+}
+
+.recent .pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.recent .pagination i {
+  cursor: pointer;
+  font-size: 18px;
+  color: #007bff;
+  transition: color 0.2s;
+}
+
+.recent .pagination i:hover {
+  color: #0056b3;
+}
+
+.recent .pagination ul {
+  display: flex;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.recent .pagination ul li {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 14px;
+  color: #007bff;
+}
+
+.recent .pagination ul li:hover {
+  background-color: #e6f0ff;
+}
+
+.recent .pagination ul li.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border-color: #007bff;
+}
+
+
+/* Top Selling Section */
+.topSelling {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pam > ul, .pam > div > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.pam li {
+    list-style: none;
+    flex: 1;
+    text-align: center;
+}
+
+/* News & Updates */
+.newsUp {
+    gap: 15px;
+}
+
+.dfl > div {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.dfl img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.dfl h2 {
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+.dfl p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+}
+
+/* Input Section Styling */
+.recent input {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 150px;
+}
+
+/* Button styling */
+.recent button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.dx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gmi img{
+    width: 250px;
+    height: 350px;
+}
+
+
+.recent {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.recent .dx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.recent .dx i {
+  cursor: pointer;
+  color: #666;
+}
+
+.recent .dthd {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.recent .dthd-right,
+.recent .dthd-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recent .mdl {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recent .mdl h2 {
+  font-size: 16px;
+  margin: 0;
+  color: #007bff;
+}
+
+.recent .chvrn {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 5px;
+  color: #007bff;
+}
+
+.recent .mdl ul {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.recent .mdl ul li {
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  color: #007bff;
+}
+
+.recent .mdl ul li:hover {
+  background-color: #f0f8ff;
+}
+
+.recent .dthd-left input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.recent .dthd-left i {
+  margin-left: 5px;
+  cursor: pointer;
+  color: #888;
+}
+
+.recent .dknown {
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: 600;
+  gap: 10px;
+  border-radius: 4px 4px 0 0;
+  list-style: none;
+  margin: 0;
+  color: #444;
+}
+
+.recent .dknown li {
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+}
+
+.recent .datas {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent .datatable-row {
+  display: flex;
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+  transition: background 0.2s;
+}
+
+.recent .datatable-row:hover {
+  background-color: #f5faff;
+}
+
+.recent .datatable-row > div {
+  flex: 1;
+  text-align: left;
+}
+
+.recent .shwng {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #666;
+}
+
+.recent .pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.recent .pagination i {
+  cursor: pointer;
+  font-size: 18px;
+  color: #007bff;
+  transition: color 0.2s;
+}
+
+.recent .pagination i:hover {
+  color: #0056b3;
+}
+
+.recent .pagination ul {
+  display: flex;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.recent .pagination ul li {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 14px;
+  color: #007bff;
+}
+
+.recent .pagination ul li:hover {
+  background-color: #e6f0ff;
+}
+
+.recent .pagination ul li.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border-color: #007bff;
+}
+
+/* Responsive for recent */
+@media screen and (max-width: 768px) {
+  .recent .dthd {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recent .dknown,
+  .recent .datatable-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recent .dknown li,
+  .recent .datatable-row > div {
+    width: 100%;
+  }
+}
+
+
+

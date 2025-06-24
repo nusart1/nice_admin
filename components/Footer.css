@@ -1,0 +1,22 @@
+.footer {
+  background-color: #ffffff; /* Fixed bilan bir xil oq fon */
+  color: #012970;            /* chuqur ko‘k matn */
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.95rem;
+  border-top: 1px solid #ddd;
+}
+
+.footer strong {
+  font-weight: 600;
+}
+
+.footer a {
+  color: #012970;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

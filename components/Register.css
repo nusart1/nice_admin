@@ -1,0 +1,224 @@
+/* Asosiy container */
+.Register {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Ichki oyna */
+.reg_content {
+  background-color: #ffffff;
+  padding: 40px 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 480px;
+  transition: all 0.3s ease;
+}
+
+/* Logo va ism */
+.nalogo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.nalogo img {
+  width: 60px;
+  height: 60px;
+  /* border-radius: 12px; */
+  object-fit: cover;
+}
+
+.nalogo h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Sarlavha va kichik matn */
+.canat h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.canat > p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.recep{
+    text-align: center;
+}
+
+/* Form elementlar ro'yxati */
+.recanat ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.recanat li {
+  margin-bottom: 18px;
+}
+
+.recanat span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Inputlar */
+.recanat input[type="text"],
+.recanat input[type="email"],
+.recanat input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+.recanat input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Username bilan @ tugmasi */
+.recanat li > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.recanat li > div button {
+  background-color: #e9ecef;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: default;
+}
+
+/* Checkbox qismi */
+.itac {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.itac input[type="checkbox"] {
+  margin-top: 2px;
+}
+
+.itac > p {
+  font-size: 14px;
+  color: #555;
+}
+
+.itac span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Yuborish tugmasi */
+.recanat button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recanat button:hover {
+  background-color: #0056b3;
+}
+
+/* Pastki login linki */
+.recanat > p {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.recanat > p span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Ustx tugmasi */
+.ustx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.ustx button {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #6c757d;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ustx button:hover {
+  background-color: #5a6268;
+}
+
+/* Error input border */
+.error-input {
+  border: 1px solid #dc3545;
+}
+
+/* Error matn */
+.error-text {
+  color: #dc3545;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+
+/* Responsive - mobilga moslashgan */
+@media screen and (max-width: 600px) {
+  .reg_content {
+    padding: 25px 20px;
+  }
+
+  .nalogo h1 {
+    font-size: 22px;
+  }
+
+  .canat h2 {
+    font-size: 20px;
+  }
+
+  .recanat button {
+    font-size: 14px;
+  }
+}

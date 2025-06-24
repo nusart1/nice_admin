@@ -1,0 +1,66 @@
+.Chart_js {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+.chex {
+  margin-bottom: 30px;
+}
+
+.chex h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.chex span {
+  font-size: 14px;
+  color: #888;
+}
+
+.chex strong {
+  color: #555;
+}
+
+.morex p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.morex p span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.mCharts {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(650px, 1fr)); */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.mCharts > div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.mCharts > div:hover {
+  transform: translateY(-5px);
+}
+
+.mCharts h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Chart responsiveness */
+.mCharts canvas {
+  max-width: 100% !important;
+  height: auto !important;
+}

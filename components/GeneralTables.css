@@ -1,0 +1,152 @@
+.GeneralTables {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.GeneralTables h2 {
+  margin: 0 0 10px 0;
+}
+
+.GeneralTables span {
+  color: #888;
+  font-size: 14px;
+}
+
+.getab {
+  margin-bottom: 30px;
+}
+
+.generalT {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px ;
+}
+
+.general-left,
+.general-right {
+  width: 48%;
+}
+
+/* Card box style like .datatables */
+.general-left > div,
+.general-right > div {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.general-left h2,
+.general-right h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.general-left p,
+.general-right p {
+  font-size: 14px;
+  color: #666;
+}
+
+.general-left span,
+.general-right span {
+  color: #ff0022;
+  font-weight: 500;
+}
+
+.general-right strong{
+  color: #007bff;
+  font-weight: 500;
+}
+
+/* Table style */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.table thead {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-active {
+  background-color: #e9ecef;
+}
+
+.table-borderless th,
+.table-borderless td {
+  border: none;
+}
+
+/* Color variants */
+.table-primary {
+  background-color: #cce5ff;
+}
+
+.table-secondary {
+  background-color: #e2e3e5;
+}
+
+.table-success {
+  background-color: #d4edda;
+}
+
+.table-danger {
+  background-color: #f8d7da;
+}
+
+.table-warning {
+  background-color: #fff3cd;
+}
+
+.table-info {
+  background-color: #d1ecf1;
+}
+
+.table-light {
+  background-color: #fefefe;
+}
+
+.table-dark {
+    background-color: #000;
+  color: #d6d8d9;
+}
+
+.table-dark thead{
+    background-color: #000;
+  color: #d6d8d9;
+}
+
+/* Small table */
+.table-sm th,
+.table-sm td {
+  padding: 5px 8px;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .general-left,
+  .general-right {
+    width: 100%;
+  }
+}

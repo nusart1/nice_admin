@@ -1,0 +1,65 @@
+.ApexCharts {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+.apex {
+  margin-bottom: 30px;
+}
+
+.apex h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.apex span {
+  font-size: 14px;
+  color: #888;
+}
+
+.apex strong {
+  color: #555;
+}
+
+.apmorex p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.apmorex p span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.apmCharts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));/* 2 qator bo'lib joylashsin iltimos. */
+  gap: 30px;
+}
+
+.apmCharts > div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.apmCharts > div:hover {
+  transform: translateY(-5px);
+}
+
+.apmCharts h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Chart responsiveness */
+.apmCharts canvas {
+  max-width: 100% !important;
+  height: auto !important;
+}

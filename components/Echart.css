@@ -1,0 +1,65 @@
+.EChart {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+.echex {
+  margin-bottom: 30px;
+}
+
+.echex h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.echex span {
+  font-size: 14px;
+  color: #888;
+}
+
+.echex strong {
+  color: #555;
+}
+
+.ecmorex p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.ecmorex p span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.ecmCharts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));/* 2 qator bo'lib joylashsin iltimos. */
+  gap: 30px;
+}
+
+.ecmCharts > div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.ecmCharts > div:hover {
+  transform: translateY(-5px);
+}
+
+.ecmCharts h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Chart responsiveness */
+.ecmCharts canvas {
+  max-width: 100% !important;
+  height: auto !important;
+}

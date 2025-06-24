@@ -1,0 +1,109 @@
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.App {
+  max-width: 1440px;
+  min-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Flex layout for direct children */
+.App > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Sidebar-related classes with smooth transitions */
+.left {
+  transition: margin-left 0.3s ease;
+}
+
+.left.with-sidebar {
+  margin-left: 16%;
+}
+
+.left.no-sidebar {
+  margin-left: 0;
+}
+
+/* Full screen layout */
+.full-screen {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+  transition: margin-left 0.3s ease;
+  margin-left: 0;
+}
+
+/* Media Queries */
+
+/* For screens 720px and below */
+@media (max-width: 720px) {
+  .left.with-sidebar {
+    margin-left: 0; /* Sidebar may be repositioned */
+  }
+
+  .Fixed {
+    width: 100%;
+    position: relative; /* Sidebar no longer fixed */
+  }
+
+  .Header,
+  .Footer {
+    padding: 10px;
+  }
+
+  input,
+  button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .Fixed ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0; /* Reset ul default padding */
+    list-style: none;
+  }
+}
+
+/* For screens 450px and below */
+@media (max-width: 450px) {
+  h1,
+  h2,
+  h3 {
+    font-size: smaller;
+  }
+
+  /* Simplify header on small screens */
+  .header-container .left-section .search-box {
+    display: none;
+  }
+
+  /* Smaller profile image */
+  .profile img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+
+  form ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px; /* Add spacing between elements */
+  }
+
+  button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}

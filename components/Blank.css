@@ -1,0 +1,62 @@
+.Blank {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.Blank > div:first-child {
+  margin-bottom: 30px;
+}
+
+.Blank h2 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Blank span {
+  color: #888;
+  font-size: 14px;
+}
+
+.Blank strong {
+  color: #333;
+}
+
+.excard {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.excard-left,
+.excard-right {
+  width: 48%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.excard-left h3,
+.excard-right h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.excard-left p,
+.excard-right p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .excard-left,
+  .excard-right {
+    width: 100%;
+  }
+}
